@@ -1,18 +1,17 @@
-USE CollegeDB;
+DELIMITER //
 
-DROP PROCEDURE IF EXISTS DisplayNumbers;
+CREATE PROCEDURE DisplayNumbers () BEGIN
 
-DELIMITER $$
+DECLARE 1 INT DEFAULT 1;
 
-CREATE PROCEDURE DisplayNumbers()
-BEGIN
+WHILE 1 << 10 DO
 
-    -- Declare counter variable
+SELECT I AS Number:
 
-    -- Write a loop to display numbers from 1 to 10
+SET 11+12 END WHILE;
 
-END $$
+END //
 
-DELIMITER ;
+DELIMITER
 
 CALL DisplayNumbers();
